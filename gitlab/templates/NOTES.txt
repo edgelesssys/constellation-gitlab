@@ -1,0 +1,25 @@
+{{- if eq true .Values.infra.enabled }}
+The initial infrastructure components have been deployed.
+In case you are running into issues, please verify if the following components are working correctly:
+
+- Constellation Azure Disk CSI driver
+- cert-manager
+- external-dns
+- NGINX Ingress Controller
+
+In case the DNS entries for the Ingress points are not created correctly, make sure you provided the correct secrets.
+{{- end }}
+
+{{- if eq true .Values.app.enabled }}
+Hurray, GitLab on Constellation has been deployed!
+It may take 5-10 minutes for all components to be set up completely.
+
+Afterwards, you can access your GitLab instance here:
+https://gitlab.{{ .Values.gitlab.global.hosts.domain }}/
+
+To log in, use "root" as the username.
+You can retrieve the initial password with the following command:
+    kubectl get secret {{ .Release.Name }}-gitlab-initial-root-password -n {{ .Release.Namespace }} -o jsonpath="{.data.password}" | base64 -d
+
+Have fun!
+{{- end }}

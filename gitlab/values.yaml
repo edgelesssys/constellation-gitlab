@@ -1,0 +1,50 @@
+# Deployment target settings
+infra:
+  enabled: false
+app:
+  enabled: false
+
+# Chart deployment settings
+gitlab:
+  global:
+    edition: ce
+    exporter:
+      enabled: false
+    kas:
+      enabled: false
+    pages:
+      enabled: false
+    grafana:
+      enabled: false
+    ingress:
+      class: nginx
+      annotations:
+        kubernetes.io/tls-acme: true
+    hosts:
+      domain: "example.com" # Change me! Gitlab will be deployed under gitlab.<your-domain>.
+  certmanager:
+    install: false
+  certmanager-issuer:
+    email: "yourname@example.com" # Change me! Issuer for a Let's Encrypt TLS certificate.
+  gitlab-exporter:
+    enabled: false
+  gitlab-runner:
+    install: false
+  minio:
+    ingress:
+      enabled: false
+  prometheus:
+    install: false
+  nginx-ingress:
+    enabled: false
+  registry:
+    enabled: false
+
+ingress-nginx:
+  controller:
+    service:
+      annotations:
+        service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: "/healthz"
+
+cert-manager:
+  installCRDs: true
