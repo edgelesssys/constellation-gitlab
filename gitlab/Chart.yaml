@@ -35,13 +35,6 @@ dependencies:
     version: "4.2.5"
     repository: "https://kubernetes.github.io/ingress-nginx"
     condition: infra.enabled
-  - name: azuredisk-csi-driver
-    version: "1.0.1"
-    repository: "https://raw.githubusercontent.com/edgelesssys/constellation-azuredisk-csi-driver/main/charts/edgeless"
-    condition: infra.enabled
-  - name: encrypted-az-disk
-    version: "0.1.0"
-    condition: infra.enabled
   - name: external-dns
     version: "0.1.0"
     condition: infra.enabled

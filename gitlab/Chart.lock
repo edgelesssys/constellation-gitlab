@@ -8,14 +8,8 @@ dependencies:
 - name: ingress-nginx
   repository: https://kubernetes.github.io/ingress-nginx
   version: 4.2.5
-- name: azuredisk-csi-driver
-  repository: https://raw.githubusercontent.com/edgelesssys/constellation-azuredisk-csi-driver/main/charts/edgeless
-  version: v1.0.1
-- name: encrypted-az-disk
-  repository: ""
-  version: 0.1.0
 - name: external-dns
   repository: ""
   version: 0.1.0
-digest: sha256:61b23171cd54bf7b258a7ad26f63f7add04b2f6ac9c8cd7bdb836f39c61bcd50
-generated: "2022-11-07T11:40:00.235068+01:00"
+digest: sha256:cd8a9720bba0cf742802ae6e6258c08cc2bdcf4f846c553173e0b148e5a23f83
+generated: "2022-12-28T12:36:13.946868+01:00"
