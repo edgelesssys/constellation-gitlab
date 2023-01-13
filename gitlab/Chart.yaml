@@ -21,10 +21,10 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "15.7.0"
+appVersion: "15.7.3"
 dependencies:
   - name: gitlab
-    version: "6.7.0"
+    version: "6.7.3"
     repository: "https://charts.gitlab.io/"
     condition: app.enabled
   - name: cert-manager
