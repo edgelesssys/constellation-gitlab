@@ -3,7 +3,7 @@ Deploy the GitLab helm chart in a Constellation cluster on Azure.
 
 # Prerequisites
 The chart assumes the following setup:
-- An existing Constellation cluster on Azure
+- An existing Constellation cluster (v2.3.0 or higher) on Azure
 - You manage your domain through [GoDaddy](https://www.godaddy.com)
 
 To use either AWS or GCP with this chart, you need to deploy another CSI driver instead of the one installed as part of this Helm chart.
