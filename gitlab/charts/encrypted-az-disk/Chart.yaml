@@ -1,5 +1,0 @@
-apiVersion: v2
-name: encrypted-az-disk
-description: A chart to set a default storage class based on the Edgless Systems Azure Disk CSI driver.
-type: application
-version: 0.1.0
