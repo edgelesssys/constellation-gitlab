@@ -1,7 +1,7 @@
 dependencies:
 - name: gitlab
   repository: https://charts.gitlab.io/
-  version: 6.10.2
+  version: 7.1.2
 - name: cert-manager
   repository: https://charts.jetstack.io
   version: v1.9.1
@@ -11,5 +11,5 @@ dependencies:
 - name: external-dns
   repository: ""
   version: 0.1.0
-digest: sha256:fe8b6fae9a3431a3ae66da18c2c7d6aed68e299e8a6949d360f44c3a7ec99a1a
-generated: "2023-04-14T16:10:32.036844323+02:00"
+digest: sha256:57d0fe253838d4a2593fa012c92503f718d4d3f3a1f0ac073ae7dea69a2ea683
+generated: "2023-07-13T10:42:49.036592075+02:00"
