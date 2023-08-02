@@ -39,6 +39,12 @@ gitlab:
     enabled: false
   registry:
     enabled: false
+  webservice:
+    replicas: 1
+    ingress:
+      proxyBodySize: 0
+  shell:
+    replicas: 1
 
 ingress-nginx:
   controller:
