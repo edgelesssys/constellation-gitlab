@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: external-dns
+  namespace: {{ .Release.Namespace }}
 spec:
   strategy:
     type: Recreate
@@ -22,6 +23,8 @@ spec:
         - --provider=godaddy
         - --godaddy-api-key=$(GODADDY_API_KEY)
         - --godaddy-api-secret=$(GODADDY_SECRET_KEY)
+        - --registry=txt
+        - --txt-owner-id={{ .Values.txtOwnerID }}
         env:
         - name: GODADDY_API_KEY
           valueFrom:
