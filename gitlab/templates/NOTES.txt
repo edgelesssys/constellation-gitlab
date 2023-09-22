@@ -3,7 +3,6 @@ The initial infrastructure components have been deployed.
 In case you are running into issues, please verify if the following components are working correctly:
 
 - Constellation Azure Disk CSI driver
-- cert-manager
 - external-dns
 - NGINX Ingress Controller
 

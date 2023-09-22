@@ -18,7 +18,6 @@ The idea here is that the infrastructure components usually are already availabl
 
 The `infra` target deploys the following components:
 - Constellation Azure Disk CSI driver
-- cert-manager
 - external-dns
 - NGINX Ingress Controller
 
@@ -75,4 +74,4 @@ This will automatically deploy and setup GitLab under: `https://gitlab.staging.e
 In case you are interested about other example deployments for Constellation, you can take a look at our [How to set up "always encrypted" Rocket.Chat🚀 on Kubernetes](https://dev.to/flxflx/rocketchat-constellation-most-secure-chat-server-ever--50oa) guide.
 
 You can find the repository [here](https://github.com/edgelesssys/constellation-rocketchat).
-If you used this guide before, you can skip the `rocket-infra` deployment step, as it sets up the same components as `gitlab-infra` does. 
+If you used this guide before, you can skip the `rocket-infra` deployment step, as it sets up the same components as `gitlab-infra` does.
