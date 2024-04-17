@@ -19,7 +19,7 @@ gitlab:
     ingress:
       class: nginx
       annotations:
-        kubernetes.io/tls-acme: true
+        cert-manager.io/issuer: gitlab-app-issuer
     hosts:
       domain: "example.com" # Change me! Gitlab will be deployed under gitlab.<your-domain>.
   certmanager:
