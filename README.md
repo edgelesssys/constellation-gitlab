@@ -1,4 +1,12 @@
 # General
+
+> [!IMPORTANT]
+> **Constellation is no longer actively maintained by Edgeless Systems.**
+> 
+> This project is no longer receiving updates or support from Edgeless Systems. The repository remains available for archival purposes and community use.
+> New development continues in Contrast, which provides workload-level confidential computing using Confidential Containers.
+> 👉 https://github.com/edgelesssys/contrast
+
 Deploy the GitLab helm chart in a Constellation cluster on Azure.
 
 # Prerequisites
